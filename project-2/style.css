@@ -1,0 +1,124 @@
+/* imp! CSS RESET and body css properties */
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #E3E9FF;
+    font-family: 'Montserray';
+    min-height: 100vh;
+    margin: 3rem 0;
+}
+p{
+    margin-bottom: 0;
+}
+/* imp! CSS Variable Declaration */
+:root{
+    --heading-bg: #AF7EEB;
+    --pure-white: #ffffff;
+    --btn-background: #6413c7;
+    --green-clr: #00912e;
+    --red-clr: #ff4c4c;
+}
+/* To-Do List main container CSS */
+.main-container-div{
+    background-color: var(--pure-white);
+    max-width: 70rem;
+    width: 90%;
+    box-shadow: rgb(100,100,111,0.2) 0 0.7rem 2.9rem 0;
+}
+.heading-div{
+    background-color: var(--heading-bg);
+    padding: 2rem;
+    color: var(--pure-white);
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.heading-div h2{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.input-div input{
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    border: 0;
+    outline: 0;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+    box-shadow: #0000001a 0 1rem 5rem;
+
+}
+.submit-btn{
+    border: 0;
+    padding: 0.5rem 2.5rem;
+    border-radius: 0.5rem;
+    color: var(--pure-white);
+    background-color: var(--btn-background);
+    opacity: 0.9;
+    transition: all 0.75s ease;
+}
+.submit-btn:hover{
+    opacity: 1;
+    transform: scale(1.01);
+}
+.submit-btn .fa-pencil{
+    font-size: 1.6rem;
+}
+/* imp! List item CSS Properties */
+
+
+/* imp! List item CSS Properties */
+.error-msg-main-div{
+    display: none;
+    margin-top: 3rem;
+}
+.list-item-main-div ul{
+    padding-left: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+.list-item-main-div li, .error-msg-div{
+    list-style: none;
+    color: var(--heading-bg);
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    border: 0.1rem solid var(--heading-bg);
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+    font-size: 1.6rem;
+    transition: all 0.7s ease;
+}
+.list-item-main-div li:last-child{
+    margin-bottom: 1.5rem;
+}
+.list-item-main-div li button{
+    border: 0;
+    color: var(--pure-white);
+    background-color: red;
+    padding: 0.75rem 1.35rem;
+    border-radius: 100%;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.task-done{
+    color: var(--green-clr) !important;
+    background-color: #d6ffe3;
+    border: o.1rem solid var(--green-clr) !important;
+}
+.task-done span{
+    text-decoration: line-through;
+}
+.error-msg-div{
+    border: 1px solid var(--red-clr);
+    background-color: #ffcece;
+    color: var(--red-clr);
+    width: 100%;
+    margin: 1rem auto 3rem;
+}
+@media (max-width:600px){
+    .error-msg-div{
+        font-size: 1.4rem;
+    }
+}
